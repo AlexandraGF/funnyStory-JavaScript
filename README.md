@@ -1,0 +1,1 @@
+## Funny Story (Javascript)
