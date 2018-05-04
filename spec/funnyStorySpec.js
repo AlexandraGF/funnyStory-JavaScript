@@ -45,6 +45,14 @@ describe('FunnyStory', function (){
     expect(story.checkMissingInfo("Alex", "")).toEqual("not Revealed");
     });
 
+    it('name should be capitalise when the story is revealed', function() {
+    story = new FunnyStory();
+    story.array = [ "PIE", "SPICY", "RESTAURANT", "HUGE", "FLUFFY TOYS", "FISH", "EVENTUALLY", "ORANGE JUICE", "FRYING", "EYES", "CRY", "WORK", "LAUGHING"];
+    storyCheck = story.checkMissingInfo("alex", "helem");
+    console.log(storyCheck);
+    expect(story.name1).toEqual("ALEX");
+    });
+
   });
 
 });

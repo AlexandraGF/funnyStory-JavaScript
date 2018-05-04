@@ -32,6 +32,19 @@ FunnyStory.prototype.checkMissingInfo = function (name1, name2) {
   }
 };
 
+FunnyStory.prototype.revealStory = function () {
+  return "One day, " + this.name1 + " and I wanted to cook " + this.array[0]
+  + " for " + this.name2 + ". We wanted to make the meal very " + this.array[1]
+  + ", so we went to the " + this.array[2] + ". When we got there, we saw a shelf full of "
+  + this.array[3] + " " + this.array[4] + ". I thought a " + this.array[5] + " would go " + this.array[6]
+  + " with the " + this.array[7] + ". Once back in the kitchen, " + this.name1
+  +  " took the peppers, chicken and ice cream out of the shopping bag and began " + this.array[8] + " them."
+  + " Preparing " + this.array[0] + " always makes my " + this.array[9] + " " + this.array[10]
+  + ". Finally, the " + this.array[0] + " was done in the oven and " + this.name2 + " came home from "
+  + this.array[11] + ". Everyone started " + this.array[12] + " after we got the " + this.array[0]
+  + " out of the oven!!!"
+};
+
 // private methods
 
 FunnyStory.prototype._getWord = function (word) {
