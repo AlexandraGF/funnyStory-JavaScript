@@ -39,6 +39,12 @@ describe('FunnyStory', function (){
       expect(story.checkMissingInfo("Alex", "Dalam")).toEqual("not Revealed");
     });
 
+    it('must have all options chosen and the two names before being revealed', function() {
+    story = new FunnyStory();
+    story.array = [ "PIE", "SPICY", "RESTAURANT", "HUGE", "FLUFFY TOYS", "FISH", "EVENTUALLY", "ORANGE JUICE", "FRYING", "EYES", "CRY", "WORK", "LAUGHING"];
+    expect(story.checkMissingInfo("Alex", "")).toEqual("not Revealed");
+    });
+
   });
 
 });
