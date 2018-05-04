@@ -12,7 +12,7 @@ describe('FunnyStory', function (){
       story.checkItem(0, "PASTA")
       story.checkItem(1, "SPICY")
       story.checkItem(2, "RESTAURANT")
-      expect(story.array.length).toEqual(3);
+      expect(story.array.length).toEqual(13);
     });
 
     it('not select more than one option on the same line', function() {

@@ -1,10 +1,13 @@
 var FunnyStory = function () {
-  this.array = [];
+  this.array = ["", "", "", "", "", "", "", "", "", "", "", "", ""];
   this.name1 = '';
   this.name2 = '';
+  this.counter = 0;
+  // this.arrayLength = 0;
 };
 
 FunnyStory.prototype.checkItem = function (arrayIndex, itemName) {
+
   if (this.array.length == arrayIndex) {
   this._getWord(itemName);
   console.log(this.array);
@@ -13,21 +16,36 @@ FunnyStory.prototype.checkItem = function (arrayIndex, itemName) {
   this.array[arrayIndex] = itemName;
   console.log(this.array);
   }
+
+};
+
+FunnyStory.prototype.checkRemainingOptions = function () {
+  var counter = 0;
+
+  this.array.forEach(function (item){
+    if ( item == "" ) {
+      counter += 1;
+    }
+    else if (item != ""){
+      counter += 0;
+    }
+    });
+
+    this.counter = counter;
 };
 
 FunnyStory.prototype.checkMissingInfo = function (name1, name2) {
-  if (this.array.length == 13 && name1.length > 0 && name2.length > 0) {
-  this._getNames(name1, name2);
-  this.revealStory();
-  return "yes";
-  console.log(this.revealStory());
+
+  console.log(this.counter);
+
+  if (this.counter == 0 && name1.length > 0 && name2.length > 0 ) {
+    this._getNames(name1, name2);
+    this.revealStory();
+    return "yes";
+    console.log(this.revealStory());
   }
-  else if (this.array.length != 13 ) {
-    alert("Please finish choosing all your options before revealing your funny story!");
-    return "not Revealed";
-  }
-  else if (name1.length == 0 || name2.length == 0) {
-    alert("Please write two names!");
+  else {
+    alert("Please finish choosing all your options or write the two names before revealing your funny story!");
     return "not Revealed";
   }
 };

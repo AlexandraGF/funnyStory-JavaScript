@@ -160,6 +160,8 @@ $(document).ready(function() {
   $('#reveal').on('click', function() {
     $( "#reveal" ).css('background', '#ff8080');
     $( "#revealStory" ).css('color', '#0C5B5B');
+    remain = story.checkRemainingOptions();
+    console.log(remain);
     name1 = $("#name1").val();
     name2 = $("#name2").val();
     revealOrNot = story.checkMissingInfo(name1, name2);
