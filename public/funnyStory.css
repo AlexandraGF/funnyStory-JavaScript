@@ -1,0 +1,71 @@
+table, th, td {
+   text-align: left;
+   align-items: center;
+   margin-left: 100px;
+   font-size: 20px;
+}
+
+h1, h2, section {
+  font-size: 18px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+}
+
+h2, h3, h4, th, #names, #revealStory {
+  font-family: 'Bad Script', cursive;
+}
+
+button, #revealStory {
+  box-shadow: 10px 10px 5px grey;
+}
+
+#revealStory {
+  font-size: 24px;
+  margin-top: -10px;
+  margin-left: -200px;
+  margin-right: -200px;
+}
+
+h2 {
+  text-align: center;
+  margin-left: 50px;
+}
+
+a:link {
+  color: "#0C5B5B";
+}
+
+input {
+  box-shadow: 10px 10px 5px grey;
+}
+
+.table1 {
+  border-style: hidden;
+  text-align: center;
+}
+
+.table2 {
+  border-style: hidden;
+  margin-left: 650px;
+  margin-right: 200px;
+  margin-top: -600px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+html {
+  background-color: #a5b6d1;
+}
+
+button {
+  background-color: #a5b6d1;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 18px;
+  border-style: double;
+  outline: none;
+}
