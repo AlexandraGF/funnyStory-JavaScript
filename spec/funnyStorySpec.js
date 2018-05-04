@@ -14,6 +14,13 @@ describe('FunnyStory', function (){
       story.checkItem(2, "RESTAURANT")
       expect(story.array.length).toEqual(3);
     });
-    
+
+    it('not select more than one option on the same line', function() {
+      story = new FunnyStory();
+      story.checkItem(0, "PASTA");
+      story.checkItem(0, "PIE");
+      expect(story.array.length).toEqual(1);
+    });
+
   });
 });
