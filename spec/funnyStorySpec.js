@@ -21,6 +21,15 @@ describe('FunnyStory', function (){
       story.checkItem(0, "PIE");
       expect(story.array.length).toEqual(1);
     });
-
   });
+
+  describe('Another option ', function(){
+  it('should replace the old option on the same line', function() {
+    story = new FunnyStory();
+    story.checkItem(0, "PIE");
+    story.checkItem(0, "PASTA");
+    expect(story.array[0]).toEqual("PASTA");
+  });
+});
+
 });
