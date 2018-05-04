@@ -48,9 +48,15 @@ describe('FunnyStory', function (){
     it('name should be capitalise when the story is revealed', function() {
     story = new FunnyStory();
     story.array = [ "PIE", "SPICY", "RESTAURANT", "HUGE", "FLUFFY TOYS", "FISH", "EVENTUALLY", "ORANGE JUICE", "FRYING", "EYES", "CRY", "WORK", "LAUGHING"];
-    storyCheck = story.checkMissingInfo("alex", "helem");
-    console.log(storyCheck);
+    story.checkMissingInfo("alex", "helem");
     expect(story.name1).toEqual("ALEX");
+    });
+
+    it('revealed should show the text after user clicks the button', function() {
+    story = new FunnyStory();
+    story.array = [ "PIE", "SPICY", "RESTAURANT", "HUGE", "FLUFFY TOYS", "FISH", "EVENTUALLY", "ORANGE JUICE", "FRYING", "EYES", "CRY", "WORK", "LAUGHING"];
+    story.checkMissingInfo("alex", "Maria");
+    expect(story.revealStory()).toContain("One day, ALEX");
     });
 
   });
