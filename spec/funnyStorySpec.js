@@ -19,7 +19,7 @@ describe('FunnyStory', function (){
       story = new FunnyStory();
       story.checkItem(0, "PASTA");
       story.checkItem(0, "PIE");
-      expect(story.array.length).toEqual(1);
+      expect(story.array[0]).toEqual("PIE");
     });
   });
 
@@ -35,7 +35,8 @@ describe('FunnyStory', function (){
   describe('Story ', function(){
     it('must have all options chosen before being revealed', function() {
       story = new FunnyStory();
-      story.array = [ "SPICY", "RESTAURANT", "HUGE", "FLUFFY TOYS", "FISH", "EVENTUALLY", "ORANGE JUICE", "FRYING", "EYES", "CRY", "WORK", "LAUGHING"];
+      story.array = [ "", "SPICY", "RESTAURANT", "HUGE", "FLUFFY TOYS", "FISH", "EVENTUALLY", "ORANGE JUICE", "FRYING", "EYES", "CRY", "WORK", "LAUGHING"];
+      story.checkRemainingOptions();
       expect(story.checkMissingInfo("Alex", "Dalam")).toEqual("not Revealed");
     });
 
