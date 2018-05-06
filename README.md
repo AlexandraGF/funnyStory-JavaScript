@@ -3,7 +3,8 @@
 ## How to create the funny story:
 
 ```
-You need to fill in the boxes with two names, choose one option out of the two options available on each line (a or b)
+You need to fill in the boxes with two names, choose one option
+out of the two options available on each line (a or b)
 and then click on the Reveal Story button and get ready to laugh!
 Enjoy the funny story!
 ```
