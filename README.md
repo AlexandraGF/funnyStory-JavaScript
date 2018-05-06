@@ -3,7 +3,8 @@
 ## How to create the funny story:
 
 ```
-You need to fill in the boxes with two names, choose one out of two options on each line (a or b) and then click on the Reveal Story button and get ready to laugh!
+You need to fill in the boxes with two names, choose one option out of the two options available on each line (a or b)
+and then click on the Reveal Story button and get ready to laugh!
 Enjoy the funny story!
 ```
 
@@ -25,7 +26,7 @@ Enjoy the funny story!
 2. Then change the directory by typing ``` cd cd funnyStory-Javascript/jasmine ```
 3. Type ``` open SpecRunner.html ``` and your browser will open the passing tests.
 
-## Screenshots from the Game
+## Screenshots from the Funny Story
 
 ![alt tag](public/photo1.png)
 ![alt tag](public/photo2.png)
