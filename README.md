@@ -18,7 +18,7 @@ Enjoy the funny story!
 
 ## How to play directly on the internet
 
-1. Open your browser and type ``` https://alexandragf.github.io/funnyStory-JavaScript/ ```
+1. Click on the link [Funny Story](https://alexandragf.github.io/funnyStory-JavaScript/)
 2. Enjoy!
 
 ## How to run the tests (Jasmine testing)
