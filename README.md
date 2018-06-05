@@ -24,7 +24,7 @@ Enjoy the funny story!
 ## How to run the tests (Jasmine testing)
 
 1. On your command line type ``` git clone git@github.com:AlexandraGF/funnyStory-JavaScript.git```
-2. Then change the directory by typing ``` cd cd funnyStory-Javascript/jasmine ```
+2. Then change the directory by typing ``` cd funnyStory-Javascript/jasmine ```
 3. Type ``` open SpecRunner.html ``` and your browser will open the passing tests.
 
 ## Screenshots from the Funny Story
